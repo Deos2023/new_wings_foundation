@@ -305,7 +305,7 @@ export default function Home() {
               >
 
                 <div className="bg-white p-8 mt-16 rounded-lg shadow-md max-w-2xl mx-auto text-center">
-                  <p className="text-gray-600 italic text-lg mb-6">"{testimonial.quote}"</p>
+                  <p className="text-gray-600 italic text-lg mb-6">{testimonial.quote}</p>
                   <div>
                     <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
                     <p className="text-indigo-600">{testimonial.role}</p>
@@ -400,7 +400,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
             <div className="w-20 h-1 bg-indigo-600 mx-auto"></div>
             <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-              We're here to help. Reach out to us with any questions or to begin the admissions process.
+              We&apos;re here to help. Reach out to us with any questions or to begin the admissions process.
             </p>
           </div>
           
