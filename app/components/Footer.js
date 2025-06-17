@@ -134,7 +134,8 @@ export default function Footer() {
               className="text-sm text-center md:text-left text-[#5E3B1F]"
             >
               © {new Date().getFullYear()} New Wings Foundation. All rights reserved.<br />
-              Committed to helping individuals overcome addiction and mental health challenges
+              Website Developed & Maintained by Digital Exposure Online Services
+
             </motion.p>
 
             <motion.div
