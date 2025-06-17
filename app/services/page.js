@@ -113,7 +113,7 @@ export default function Services() {
       <section className="bg-indigo-700 text-white py-32">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl max-w-2xl mx-auto">Comprehensive, compassionate care tailored to each individual's recovery needs</p>
+          <p className="text-xl max-w-2xl mx-auto">Comprehensive, compassionate care tailored to each individual&apos;s recovery needs</p>
         </div>
       </section>
 
