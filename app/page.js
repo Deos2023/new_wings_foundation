@@ -294,10 +294,11 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="relative h-96 bg-cover bg-center bg-no-repeat bg-fixed"
+          <div className="relative h-96 bg-cover bg-center  bg-no-repeat bg-fixed"
           style={{
         backgroundImage: "url('/hero3.webp')", // Adjust path based on your `public` folder
       }}>
+        
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
@@ -343,23 +344,33 @@ export default function Home() {
         { src: "/img/1 (36).jpeg", alt: "World No Drug Day" },
         { src: "/img/1 (39).jpeg", alt: "International Anti Liquor Day - 26 June" },
         { src: "/img/1 (42).jpeg", alt: "International Day Against Drug Abuse" },
-        { src: "/img/1 (44).jpeg", alt: "Stop Drugs Banner 1" },
-        { src: "/img/1 (38).jpeg", alt: "Stop Drugs Banner 2" },
-        { src: "/img/1 (37).jpeg", alt: "Stop Drugs Banner 2" },
+        { src: "/img/1 (44).jpeg", alt: "Stop Drug" },
+        { src: "/img/1 (38).jpeg", alt: "Stop Drugs " },
+        { src: "/img/1 (37).jpeg", alt: "Health Camps" },
       ].map((item, index) => (
-        <div key={index} className="relative w-full h-80 justify-center items-center rounded-xl overflow-hidden shadow-md">
-          <Image 
-            src={item.src} 
-            alt={item.alt} 
-            layout="fill" 
-            objectFit="cover" 
-            className="hover:scale-105 transition-transform duration-500"
-          />
+        <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden">
+          {/* Image container */}
+          <div className="relative w-full h-80 flex justify-center items-center bg-white">
+            <Image 
+              src={item.src} 
+              alt={item.alt} 
+              layout="fill" 
+              objectFit="contain" 
+              objectPosition="center"
+              className="transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+          {/* Caption */}
+          <div className="py-3 px-4 text-center">
+            <p className="text-sm font-medium text-gray-700">{item.alt}</p>
+          </div>
         </div>
       ))}
     </div>
   </div>
 </section>
+
+
       {/* Our Approach Section */}
 <section className="py-16 bg-white">
   <div className="container mx-auto px-6">
