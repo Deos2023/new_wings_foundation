@@ -25,7 +25,7 @@ export default function AboutUs() {
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
               <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
                 <Image 
-                  src="/hero1.webp" 
+                  src="/img/1 (27).jpeg" 
                   alt="Our Story" 
                   layout="fill" 
                   objectFit="cover" 
@@ -81,6 +81,38 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+{/* Awareness Banners Section */}
+<section className="py-16 bg-gray-100">
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">International Anti-Drug & Liquor Awareness Days</h2>
+      <p className="text-gray-600 max-w-2xl mx-auto">
+        We proudly support global movements promoting a healthier, addiction-free world.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {[
+        { src: "/img/1 (36).jpeg", alt: "World No Drug Day" },
+        { src: "/img/1 (39).jpeg", alt: "International Anti Liquor Day - 26 June" },
+        { src: "/img/1 (42).jpeg", alt: "International Day Against Drug Abuse" },
+        { src: "/img/1 (44).jpeg", alt: "Stop Drugs Banner 1" },
+        { src: "/img/1 (38).jpeg", alt: "Stop Drugs Banner 2" },
+        { src: "/img/1 (37).jpeg", alt: "Stop Drugs Banner 2" },
+      ].map((item, index) => (
+        <div key={index} className="relative w-full h-80 justify-center items-center rounded-xl overflow-hidden shadow-md">
+          <Image 
+            src={item.src} 
+            alt={item.alt} 
+            layout="fill" 
+            objectFit="cover" 
+            className="hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Image & Video Section */}
      <section className="py-16 bg-white">
@@ -93,13 +125,13 @@ export default function AboutUs() {
 
       <div className="flex flex-col md:flex-row gap-6 items-center">
         {/* Single Image - Tall image preserved */}
-        <div className="relative w-full md:w-1/2 h-[450px] bg-white rounded-lg overflow-hidden">
+        <div className="relative w-full md:w-1/2 h-[400px] -bottom-7 bg-white rounded-lg overflow-hidden">
           <Image 
-            src="/img1.jpg" 
+            src="/img/1 (3).jpeg" 
             alt="Our Facility" 
             layout="fill" 
             objectFit="contain" 
-            objectPosition="top"
+            objectPosition="bottom"
           />
         </div>
 
