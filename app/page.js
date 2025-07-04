@@ -234,7 +234,7 @@ export default function Home() {
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
               <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
                 <Image 
-                  src="/img/1 (48).jpeg" 
+                  src="/img/1 (46).jpeg" 
                   alt="About New Wings Foundation" 
                   layout="fill" 
                   objectFit="cover" 
@@ -344,7 +344,7 @@ export default function Home() {
         { src: "/img/1 (36).jpeg", alt: "World No Drug Day" },
         { src: "/img/1 (39).jpeg", alt: "International Anti Liquor Day - 26 June" },
         { src: "/img/1 (42).jpeg", alt: "International Day Against Drug Abuse" },
-        { src: "/img/1 (44).jpeg", alt: "Stop Drug" },
+        { src: "/img/1 (1).jpeg", alt: "Stop Drug" },
         { src: "/img/1 (38).jpeg", alt: "Stop Drugs " },
         { src: "/img/1 (37).jpeg", alt: "Health Camps" },
       ].map((item, index) => (
