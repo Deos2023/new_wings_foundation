@@ -9,21 +9,21 @@ const heroSlides = [
   {
     title: "Recovery Starts Here",
     description: "Professional drug de-addiction and rehabilitation services in Noapara, Barasat. We help individuals regain control of their lives.",
-    image: "/hero1.webp",
+    image: "/img/1 (66).jpeg",
     ctaPrimary: "Get Help Now",
     ctaSecondary: "Our Services"
   },
   {
     title: "A New Beginning",
     description: "Compassionate care for those struggling with addiction and mental health challenges.",
-    image: "/hero2.webp",
+    image: "/img/1 (70).jpeg",
     ctaPrimary: "Call Now",
     ctaSecondary: "Learn More"
   },
   {
     title: "Holistic Treatment",
     description: "Addressing not just addiction but the underlying issues for long-term recovery.",
-    image: "/hero3.webp",
+    image: "/img/1 (65).jpeg",
     ctaPrimary: "Start Today",
     ctaSecondary: "Our Approach"
   }
