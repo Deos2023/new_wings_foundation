@@ -343,8 +343,8 @@ export default function Home() {
       {[
         { src: "/img/1 (36).jpeg", alt: "World No Drug Day" },
         { src: "/img/1 (39).jpeg", alt: "International Anti Liquor Day - 26 June" },
-        { src: "/img/1 (42).jpeg", alt: "International Day Against Drug Abuse" },
-        { src: "/img/1 (1).jpeg", alt: "Stop Drug" },
+        // { src: "/img/1 (42).jpeg", alt: "International Day Against Drug Abuse" },
+        { src: "/img/1 (1).jpeg", alt: "Yoga " },
         { src: "/img/1 (38).jpeg", alt: "Stop Drugs " },
         { src: "/img/1 (37).jpeg", alt: "Health Camps" },
       ].map((item, index) => (
