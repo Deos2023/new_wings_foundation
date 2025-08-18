@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 // Generate image paths
-const images = Array.from({ length: 71 }, (_, i) => `/img/1 (${i + 1}).jpeg`);
+const images = Array.from({ length: 123 }, (_, i) => `/img/1 (${i + 1}).jpeg`);
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState(null);

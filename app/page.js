@@ -234,7 +234,7 @@ export default function Home() {
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
               <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
                 <Image 
-                  src="/img/1 (46).jpeg" 
+                  src="/img/1 (123).jpeg" 
                   alt="About New Wings Foundation" 
                   layout="fill" 
                   objectFit="cover" 
