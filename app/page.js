@@ -6,6 +6,20 @@ import Image from 'next/image'
 import { Link } from 'lucide-react'
 
 const heroSlides = [
+    {
+    title: "A New Beginning",
+    description: "Compassionate care for those struggling with addiction and mental health challenges.",
+    image: "/hero/img1.png",
+    ctaPrimary: "Call Now",
+    ctaSecondary: "Learn More"
+  },
+    {
+    title: "A New Beginning",
+    description: "Compassionate care for those struggling with addiction and mental health challenges.",
+    image: "/hero/img2.png",
+    ctaPrimary: "Call Now",
+    ctaSecondary: "Learn More"
+  },
   {
     title: "Recovery Starts Here",
     description: "Professional drug de-addiction and rehabilitation services in Noapara, Barasat. We help individuals regain control of their lives.",
@@ -26,7 +40,7 @@ const heroSlides = [
     image: "/img/1 (65).jpeg",
     ctaPrimary: "Start Today",
     ctaSecondary: "Our Approach"
-  }
+  },
 ]
 
 const testimonials = [
@@ -118,7 +132,7 @@ export default function Home() {
               </div>
 
               {/* Larger Image Section */}
-              <div className="w-full md:w-1/2 flex justify-center z-10 px-2">
+              <div className="w-full md:w-1/2 flex  justify-center z-10 px-2">
                 <div className="relative w-full max-w-md lg:max-w-xl h-80 sm:h-96 md:h-[500px]">
                   <Image
                     src={slide.image}
@@ -135,7 +149,7 @@ export default function Home() {
         ))}
 
         {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20">
+        <div className="absolute bottom-8 left-0 right-0 flex justify-center  space-x-2 z-20">
           {heroSlides.map((_, index) => (
             <button
               key={index}
