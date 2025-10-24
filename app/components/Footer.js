@@ -23,7 +23,7 @@ export default function Footer() {
                 Professional drug de-addiction & rehabilitation center in Noapara, Barasat. Providing compassionate care and treatment for addiction and minor mental health conditions.
               </p>
               <div className="flex gap-4">
-                <Link href="#" className="bg-[#5E3B1F] hover:bg-[#3D2B1F] p-2 rounded-full transition text-white">
+                <Link href="https://www.facebook.com/share/1F7vBtXj51/" className="bg-[#5E3B1F] hover:bg-[#3D2B1F] p-2 rounded-full transition text-white">
                   <Facebook className="w-5 h-5" />
                 </Link>
                 <Link href="#" className="bg-[#5E3B1F] hover:bg-[#3D2B1F] p-2 rounded-full transition text-white">
