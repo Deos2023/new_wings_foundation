@@ -361,6 +361,8 @@ export default function Home() {
         { src: "/img/1 (1).jpeg", alt: "Yoga " },
         { src: "/img/1 (38).jpeg", alt: "Stop Drugs " },
         { src: "/img/1 (37).jpeg", alt: "Health Camps" },
+        { src: "/img/new.jpeg", alt: "Health Camps" },
+        { src: "/img/new2.jpeg", alt: "Treatment Center" },
       ].map((item, index) => (
         <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden">
           {/* Image container */}
