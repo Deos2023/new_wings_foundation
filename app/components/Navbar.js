@@ -1,32 +1,42 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const pathname = usePathname()
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'About', href: '/about' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' },
-  ]
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "About", href: "/about" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
+  ];
 
-  const isActive = (href) => pathname === href
+  const isActive = (href) => pathname === href;
 
   return (
     <nav className="bg-white shadow-md text-[#3D2B1F] fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
         {/* Logo + Organization Name */}
         <Link href="/" className="flex items-center space-x-3">
-          <Image src="/logo.png" alt="Knight Security Logo" width={100} height={100} />
-          <span className="text-lg md:text-xl font-bold text-[#3D2B1F]">New Wings Foundation </span>
+          <Image
+            src="/logo.png"
+            alt="Knight Security Logo"
+            width={100}
+            height={100}
+          />
+          <span className="text-lg md:text-xl font-bold text-[#3D2B1F]">
+            New Wings Foundation{" "}
+          </span>
+          <span className="text-sm md:text-sm font-mono text-[#814d2b]">
+            Female and Male Rehabilitation
+          </span>
         </Link>
 
         {/* Desktop Menu */}
@@ -36,7 +46,9 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`font-medium transition hover:text-[#5E3B1F] ${
-                isActive(link.href) ? 'text-[#5E3B1F] underline underline-offset-4 font-semibold' : ''
+                isActive(link.href)
+                  ? "text-[#5E3B1F] underline underline-offset-4 font-semibold"
+                  : ""
               }`}
             >
               {link.name}
@@ -68,7 +80,9 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
                 className={`block py-2 font-medium border-b border-gray-100 transition ${
-                  isActive(link.href) ? 'text-[#5E3B1F] underline underline-offset-4 font-semibold' : 'text-[#3D2B1F]'
+                  isActive(link.href)
+                    ? "text-[#5E3B1F] underline underline-offset-4 font-semibold"
+                    : "text-[#3D2B1F]"
                 }`}
               >
                 {link.name}
@@ -84,5 +98,5 @@ export default function Navbar() {
         )}
       </div>
     </nav>
-  )
+  );
 }
